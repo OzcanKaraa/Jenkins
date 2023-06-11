@@ -1,0 +1,25 @@
+docker run jenkins:2.60.3
+
+Dockerfile Komutları
+
+FROM: Base Image
+FROM Image :Tag
+FROM Ubuntu :18.04 
+FROM Ubuntu :latest
+
+RUN : Terminal Kodları çalıştırma
+RUN apt-get update && apt-get upgrade && apt-get install -y vim 
+
+CMD :
+FROM ubuntu 
+CMD {"/bin/echo"}
+
+VOLUME :
+VOLUME <mountpain>
+
+USER :
+USER <user>
+
+MAINTAINER : Name-Surname
+
+EXPOSE 8888 <new Port>
